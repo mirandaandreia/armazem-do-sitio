@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Armazém do Sítio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Armazém do Sítio" style="max-width: 500px; height: auto;">
+  </header>
+
+  <main>
+    <!-- Horti Fruti -->
+    <div class="section">
+      <h1>Horti Fruti</h1>
+      <div class="products">
+        <div class="product">
+          <img src="banana.jpg" alt="Banana">
+          <p>Banana prata<br>R$ 4,99/kg</p>
+          <input type="number" data-preco="4.99" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="maca.jpg" alt="Maçã">
+          <p>Maçã<br>R$ 6,99/kg</p>
+          <input type="number" data-preco="6.99" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="mamao.jpg" alt="Mamão">
+          <p>Mamão Formoso<br>R$ 3,99/kg</p>
+          <input type="number" data-preco="3.99" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="laranja.jpg" alt="Laranja">
+          <p>Laranja<br>R$ 5,99/kg</p>
+          <input type="number" data-preco="5.99" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="uva.jpg" alt="Uva Itália">
+          <p>Uva Itália<br>R$ 10,94/kg</p>
+          <input type="number" data-preco="10.94" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="morango.jpg" alt="Morango">
+          <p>Morango<br>R$ 9,99/kg</p>
+          <input type="number" data-preco="9.99" min="0" value="0">
+        </div>
+      </div>
+    </div>
+
+    <!-- Quarta Verde -->
+    <div class="section">
+      <h1>Quarta Verde</h1>
+      <div class="products">
+        <div class="product">
+          <img src="brocolis.jpg" alt="Brócolis">
+          <p>Brócolis<br>R$ 8,00/kg</p>
+          <input type="number" data-preco="8.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="alface.jpg" alt="Alface">
+          <p>Alface<br>R$ 5,00/kg</p>
+          <input type="number" data-preco="5.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="batata.jpg" alt="Batata">
+          <p>Batata Inglesa<br>R$ 6,00/kg</p>
+          <input type="number" data-preco="6.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="tomate.jpg" alt="Tomate">
+          <p>Tomate<br>R$ 5,99/kg</p>
+          <input type="number" data-preco="5.99" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="abobrinha.jpg" alt="Abobrinha">
+          <p>Abobrinha<br>R$ 7,00/kg</p>
+          <input type="number" data-preco="7.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="cebola.jpg" alt="Cebola Roxa">
+          <p>Cebola Roxa<br>R$ 7,90/kg</p>
+          <input type="number" data-preco="7.90" min="0" value="0">
+        </div>
+      </div>
+    </div>
+
+    <!-- Artesanais -->
+    <div class="section">
+      <h1>Produtos Artesanais</h1>
+      <div class="products">
+        <div class="product">
+          <img src="goiaba.jpg" alt="Geleia de Goiaba">
+          <p>Geleia de Goiaba<br>R$ 15,00/unid</p>
+          <input type="number" data-preco="15.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="jabuticaba.jpg" alt="Geleia de Jabuticaba">
+          <p>Geleia de Jabuticaba<br>R$ 15,00/unid</p>
+          <input type="number" data-preco="15.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="maracuja.jpg" alt="Geleia de Maracujá">
+          <p>Geleia de Maracujá<br>R$ 15,00/unid</p>
+          <input type="number" data-preco="15.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="vermelhas.jpg" alt="Frutas Vermelhas">
+          <p>Geleia Frutas Vermelhas<br>R$ 20,00/unid</p>
+          <input type="number" data-preco="20.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="pao.jpg" alt="Pão Caseiro">
+          <p>Pão Caseiro<br>R$ 10,00/unid</p>
+          <input type="number" data-preco="10.00" min="0" value="0">
+        </div>
+        <div class="product">
+          <img src="bolacha.jpg" alt="Bolacha Caseira">
+          <p>Bolacha Caseira<br>R$ 15,00/kg</p>
+          <input type="number" data-preco="15.00" min="0" value="0">
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <div class="form-section">
+      <h3>Dados do Cliente</h3>
+      <form id="pedidoForm">
+        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+
+        <label for="pagamento">Forma de Pagamento:</label>
+        <select id="pagamento" name="pagamento" required>
+          <option value="">Selecione</option>
+          <option value="dinheiro">Dinheiro</option>
+          <option value="pix">PIX</option>
+          <option value="cartao">Cartão</option>
+        </select>
+
+        <h3>Total: R$ <span id="total">0.00</span></h3>
+
+        <!-- QR Code -->
+        <div class="qr" id="pixSection" style="display: none;">
+          <h2>Pague com PIX</h2>
+          <img src="qrcode_pix.jpg" alt="QR Code Pix" width="200">
+          <p>Chave Pix: 148.483.899-84</p>
+        </div>
+
+        <h2>Escolha como receber</h2>
+        <label><input type="radio" name="entrega" value="retirada" required> Retirar na loja</label>
+        <label><input type="radio" name="entrega" value="entrega" required> Entrega em casa</label>
+
+        <br><br>
+        <button type="submit">Finalizar Pedido</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Rua Alegre, 123 - Cidade Loanda/PR | (44) 3456-7890</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

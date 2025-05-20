@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaço entre os produtos */
+  justify-content: flex-start; /* Alinhamento à esquerda */
+}
+
+.product {
+  flex: 1 1 160px; /* Cada produto ocupa no mínimo 160px, ajusta conforme a tela */
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-banner {
+  background-image: url("logo.jpg");
+  background-size: cover; /* ou "contain", dependendo do efeito desejado */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120px; /* ajuste conforme a proporção da logo */
+  width: 100%;
+}
