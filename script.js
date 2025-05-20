@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const qtd = parseInt(input.value);
       if (qtd > 0) {
         algumItem = true;
-        const nomeProduto = input.previousElementSibling.previousElementSibling.textContent;
+        const nomeProduto = input.dataset.nome;
         mensagem += `• ${nomeProduto} x${qtd}%0A`;
       }
     });
